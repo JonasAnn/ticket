@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+@media only screen and (max-width: 900px){
+    html {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    html {
+        font-size: 40%;
+    }
+}
+body{
+    background-color: #ffffff;
+    color:#0C0C0C;
+    letter-spacing: 3px;
+}
+
+/* fonts used */
+@font-face{
+    font-family: "Nersans";
+    src: url(fonts/Nersans\ Three.otf);
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "shapiro-dark";
+    src: url(fonts/OGJ\ Type\ Design\ -\ Shapiro\ 95\ Super\ Wide.otf);
+    font-style: normal;
+}
+.main{
+    width: 50%;
+    margin: 4rem auto;
+}
+@media only screen and (max-width: 600px){
+    .main{
+        width: 100%;
+    }
+}
+/* styling for header */
+.header{
+    width: 100%;
+}
+
+.navbar{
+    background-color: #0C0C0C;
+    padding: 1rem 2rem;
+}
+.navbar__logo{
+    width: 10%;
+}
+.header__heading{
+    background-color: #CCCDCB;
+    padding: 1rem 2rem;
+}
+.header__heading--box{
+    width: 60%;
+}
+.header__heading--image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ticket section styling */
+.ticket {
+    position: relative;
+    background: #0C0C0C;
+    display: flex;
+  }
+  
+.ticket::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 21px 0 21px;
+    border-color: #0C0C0C transparent transparent transparent;
+    left: 17%;
+    transform: translateX(-50%) translateY(100%);
+}
+.ticket__holder{
+    width: 40%;
+    padding: 1.5rem 0 3rem;
+     border-right: 3px dashed rgba(204, 205, 203, 0.274);
+     
+}
+.ticket__holder--heading{
+    color: #ec6e00;
+    font-family: shapiro-dark;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.ticket__holder--paragraph{
+    color: #ffffff;
+    font-family: Nersans;
+    font-size: 1rem;
+    padding: .5rem 0 2rem 3rem;
+}
+.ticket__holder--barcode{
+    margin: 0 2.5rem 0 auto;
+    width: 70%;
+}
+.ticket__barcode{
+    object-fit: cover;
+    width: 100%;
+}
+.ticket__details{
+    width: 60%;
+    padding: 1.5rem 0 3rem 1.8rem;
+}
+.ticket__details__heading{
+    color: #ec6e00;
+    font-family: shapiro-dark;
+    font-size: 2.3rem;
+}
+.ticket__details--box{
+     margin: 1rem 0;
+     color: #ffffff;
+     text-transform: uppercase;
+}
+.details__heading{
+     color: #ffffff;
+     font-family: shapiro-dark;
+     font-size: 1.3rem;
+}
+.details__paragraph{
+     font-family: Nersans;
+     font-weight: 100;
+}
+.details__paragraph--span{
+     display: block;
+}
+@media only screen and (max-width: 600px){
+    .ticket::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #0C0C0C transparent transparent transparent;
+        left: 17%;
+        transform: translateX(-50%) translateY(100%);
+    }
+}
+/* ticket info section styling */
+.ticket__info{
+   background-color: #CCCDCB;
+   padding: 4rem 2rem 4rem 3rem;
+}
+.ticket__info--main{
+   display: flex;
+   justify-content: space-between;
+}
+.ticket__info--heading{
+   font-family: shapiro-dark;
+   font-size: 1.5rem;
+}
+.ticket__info--box1{
+   flex: 35%;
+}
+.ticket__info--box2{
+    width: 12%;
+}
+.ticket__info--box3{
+   width: 20%;
+}
+.ticket__info--box4{
+   width: 35%;
+}
+.ticket__head{
+    text-align: right;
+}
+.ticket__info--paragraph,
+.ticket__info--qty,
+.ticket__info--sub,
+.ticket__info--price{
+    font-family: Nersans;
+    font-style: italic;
+    padding: .5rem 0 0;
+}
+.ticket__info--qty,
+.ticket__info--sub,
+.ticket__info--price{
+    padding: .5rem 0 0 2rem;
+    text-align: center;
+}
+.ticket__info--box5{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 1.5rem 4.5rem 0 auto;
+}
+.ticket__info--total{
+    font-size: 2rem;
+    font-family: Nersans;
+    font-style: italic;
+}
+@media only screen and (max-width: 900px){
+    .ticket__info--heading{
+        font-size: 1.25rem;
+    }
+    .ticket__info--box2{
+        width: 15%;
+    }
+    .ticket__info--box3{
+        width: 20%;
+    }
+    .ticket__info--qty,
+    .ticket__info--sub,
+    .ticket__info--price{
+        padding: .5rem 0 0 1rem;
+    }
+    .ticket__info--box5{
+        width: 35%;
+        margin: 1.5rem 5rem 0 auto;
+    }
+    .ticket__info--total{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .ticket__info--heading{
+        font-size: 1rem;
+    }
+    .ticket__info--box2{
+        width: 15%;
+    }
+    .ticket__info--box3{
+        width: 20%;
+    }
+    .ticket__info--qty,
+    .ticket__info--sub,
+    .ticket__info--price{
+        padding: .5rem 0 0 1rem;
+    }
+    .ticket__info--box5{
+        width: 35%;
+        margin: 1.5rem 5rem 0 auto;
+    }
+    .ticket__info--total{
+        font-size: 1.15rem;
+    }
+}
+
+  /* receipt styling */
+.receipt{
+    background-color: #CCCDCB;
+}
+.receipt__heading{
+    background-color: #0C0C0C;
+    text-align: center;
+    padding: 1rem 0;
+}
+.receipt__heading--image{
+    width: 30%;
+}
+.receipt__details--box{
+    display: flex;
+    padding: 1.5rem 0;
+}
+.receipt__info{
+    padding: 0 0 0 2rem;
+    width: 60%;
+}
+.receipt__info--heading{
+      font-family: shapiro-dark;
+      font-size: 2.5rem;
+}
+.receipt__info--header2{
+    font-family: shapiro-dark;
+    font-size: 1.5rem;
+    padding: 1.5rem 0 0;
+}
+.receipt__info--paragraph{
+    font-family: Nersans;
+    padding: .5rem 0 0;
+}
+.receipt__action{
+    flex: 1;
+    margin: 3.5rem 2rem 0 0;
+}
+.receipt__cta{
+    width: 70%;
+    margin: 0 0 -1rem auto;
+}
+.receipt__cta--image,
+.receipt__barcode--image{
+    width: 100%;
+    object-fit: cover;
+}
+.receipt__barcode{
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+
+@media only screen and (max-width: 900px){
+    .receipt__info{
+        width: 52%;
+    }
+    .receipt__info--heading{
+          font-size: 2rem;
+    }
+    .receipt__info--header2{
+        font-size: 1rem;
+    }
+    .receipt__action{
+        flex: 1;
+        margin: 3.5rem 2rem 0 0;
+    }
+    .receipt__cta{
+        width: 70%;
+    }
+    .receipt__barcode{
+        width: 100%;    
+    } 
+}
