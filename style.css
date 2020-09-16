@@ -52,7 +52,8 @@ body{
 }
 
 .navbar{
-    background-color: #0C0C0C;
+    background: url("./img/background\ 1.png");
+    background-size: cover;
     padding: 1rem 2rem;
 }
 .navbar__logo{
@@ -61,6 +62,8 @@ body{
 .header__heading{
     background-color: #CCCDCB;
     padding: 1rem 2rem;
+    background-image: url("./img/background\ 2.png");
+    background-size: cover;
 }
 .header__heading--box{
     width: 60%;
@@ -70,15 +73,12 @@ body{
     width: 100%;
     height: 100%;
 }
-@media only screen and (max-width: 900px){
-    .navbar__logo{
-    width: 15%;
-    }
-}
+
 /* ticket section styling */
 .ticket {
     position: relative;
-    background: #0C0C0C;
+    background-image: url("./img/background\ 3.png");
+    background-size: cover;
     display: flex;
   }
   
@@ -164,6 +164,8 @@ body{
 .ticket__info{
    background-color: #CCCDCB;
    padding: 4rem 2rem 4rem 3rem;
+   background-image: url("./img/background\ 4.png");
+   background-size: cover;
 }
 .ticket__info--main{
    display: flex;
@@ -269,6 +271,8 @@ body{
     background-color: #0C0C0C;
     text-align: center;
     padding: 1rem 0;
+    background-image: url("./img/background\ 5.png");
+    background-size: cover;
 }
 .receipt__heading--image{
     width: 30%;
@@ -276,6 +280,8 @@ body{
 .receipt__details--box{
     display: flex;
     padding: 1.5rem 0;
+    background-image: url("./img/background\ 6.png");
+    background-size: cover;
 }
 .receipt__info{
     padding: 0 0 0 2rem;
@@ -313,9 +319,6 @@ body{
 }
 
 @media only screen and (max-width: 900px){
-    .receipt__heading--image{
-    width: 40%;
-    }
     .receipt__info{
         width: 52%;
     }
